@@ -18,6 +18,10 @@
 
 /*Parcours*/
 
+.subTitle {
+    padding: 1.25rem 0 0 0;
+}
+
 .subTitle h2 {
     text-transform: uppercase;
     color: #CE0033;
