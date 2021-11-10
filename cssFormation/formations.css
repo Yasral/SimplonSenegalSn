@@ -1,5 +1,79 @@
 /*Header*/
 
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Nunito Sans";
+}
+
+[alt="logo"] {
+    width: 150px;
+}
+
+header {
+    padding: 1.1875rem 0;
+}
+
+.logo {
+    margin-left: 3.4375rem;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+@media (min-width: 576px) {
+    .navbar-nav {
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-nav {
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar-nav {
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 1400px) {
+    .navbar-nav {
+        justify-content: space-evenly;
+    }
+}
+
+.nav-link,
+.nav-link:hover,
+.nav-link:focus {
+    color: #000;
+    font-weight: bold;
+}
+
+.nav-item .contact {
+    width: 5.4375rem;
+    height: 2rem;
+    border: none;
+    background-color: #CE0033;
+    color: #fff;
+    border-radius: 1.5625rem;
+}
+
 
 /*End Header*/
 
