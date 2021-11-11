@@ -1,5 +1,6 @@
 /*Header*/
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 ul {
     list-style-type: none;
 }
@@ -67,6 +68,15 @@ header {
 .nav-link:focus {
     color: #000;
     font-weight: bold;
+}
+
+.nav-link.active {
+    color: #000;
+    border-bottom: 0.1875rem solid #CE0033;
+}
+
+.nav-link {
+    padding-bottom: 1.25rem;
 }
 
 .nav-item .contact {
