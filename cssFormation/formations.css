@@ -132,6 +132,51 @@
 
 /*Partenariat*/
 
+.card-header {
+    background-color: #CE0033;
+    position: relative;
+}
+
+.header-text {
+    color: #fff;
+    font-weight: bold;
+}
+
+.card-header::before,
+.card-header::after {
+    position: absolute;
+    content: '';
+    width: 1.875rem;
+    height: 1.875rem;
+    background-color: #CE0033;
+    bottom: -0.125rem;
+    z-index: 100;
+}
+
+.card-header::before {
+    right: 50%;
+    transform: skew(0, 20deg);
+}
+
+.card-header::after {
+    left: 50%;
+    transform: skew(0, -20deg);
+}
+
+.height-resize {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.height-padding {
+    padding: 1.63333125rem 0 0 0;
+}
+
+.card-body .partenariat-btn {
+    width: 13.25rem;
+    height: 3.15875rem;
+}
+
 
 /*End Partenariat*/
 
