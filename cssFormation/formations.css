@@ -1,5 +1,93 @@
 /*Header*/
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Nunito Sans";
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28 206, 0, 51, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+[alt="logo"] {
+    max-width: 9.375rem;
+}
+
+header {
+    padding: 1.1875rem 0;
+}
+
+.logo {
+    margin-left: 1.4375rem;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+@media (min-width: 576px) {
+    .navbar-nav {
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-nav {
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar-nav {
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 1400px) {
+    .navbar-nav {
+        justify-content: space-evenly;
+    }
+}
+
+.nav-link,
+.nav-link:hover,
+.nav-link:focus {
+    color: #000;
+    font-weight: bold;
+}
+
+.nav-link.active {
+    color: #000;
+    border-bottom: 0.1875rem solid #CE0033;
+}
+
+.nav-link {
+    padding-bottom: 1.25rem;
+}
+
+.nav-item .contact {
+    min-width: 5.4375rem;
+    height: 2rem;
+    border: none;
+    background-color: #CE0033;
+    color: #fff;
+    border-radius: 1.5625rem;
+}
+
 
 /*End Header*/
 
