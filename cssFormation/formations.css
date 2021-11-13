@@ -170,6 +170,101 @@ header {
 
 /*Parcours*/
 
+.subTitle {
+    padding: 1.25rem 0 0 0;
+}
+
+.subTitle h2 {
+    text-transform: uppercase;
+    color: #CE0033;
+    letter-spacing: 4%;
+    /* font-size: 3rem; */
+}
+
+.subTitle span {
+    display: block;
+    width: 5rem;
+    height: 0.1875rem;
+    border-top: 0.1875rem solid #000;
+}
+
+.subTitle span+p {
+    line-height: 2.04625rem;
+    text-align: justify;
+    padding: 2rem 0 2.875rem 0;
+}
+
+.formationCards {
+    /* max-width: 21.5rem; */
+    min-width: 14.625rem;
+}
+
+.card {
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+.card-body {
+    text-align: center;
+}
+
+.my-cards {
+    max-height: 14.375rem;
+}
+
+.card-title {
+    text-transform: uppercase;
+    color: #CE0033;
+    text-align: center;
+    padding: 0 0 0.9375rem 0;
+    font-weight: bold;
+}
+
+.card-text {
+    line-height: 1.6875rem;
+    text-align: center;
+}
+
+.partenariatCards .card-text {
+    padding: 2rem 0 2.875rem 0;
+}
+
+.card-body button {
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    background-color: #CE0033;
+    width: 10.514375rem;
+    height: 2.754375rem;
+    border: 0.0625rem solid #CE0033;
+    border-radius: 2.5rem;
+    margin: 0 0 0.9375rem 0;
+}
+
+.affichage {
+    padding: 1.25rem 0;
+    text-align: right;
+    position: relative;
+}
+
+.affichage a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.affichage span:first-of-type {
+    width: 1.25rem;
+}
+
+.affichage span:last-child {
+    display: block;
+    width: 7rem;
+    height: 0.1875rem;
+    border-top: 0.0625rem solid #000;
+    position: absolute;
+    right: 0;
+}
+
 
 /*End Parcours*/
 
@@ -181,6 +276,51 @@ header {
 
 
 /*Partenariat*/
+
+.card-header {
+    background-color: #CE0033;
+    position: relative;
+}
+
+.header-text {
+    color: #fff;
+    font-weight: bold;
+}
+
+.card-header::before,
+.card-header::after {
+    position: absolute;
+    content: '';
+    width: 1.875rem;
+    height: 1.875rem;
+    background-color: #CE0033;
+    bottom: -0.125rem;
+    z-index: 100;
+}
+
+.card-header::before {
+    right: 50%;
+    transform: skew(0, 20deg);
+}
+
+.card-header::after {
+    left: 50%;
+    transform: skew(0, -20deg);
+}
+
+.height-resize {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.height-padding {
+    padding: 1.63333125rem 0 0 0;
+}
+
+.card-body .partenariat-btn {
+    min-width: 13.25rem;
+    min-height: 3.15875rem;
+}
 
 
 /*End Partenariat*/
