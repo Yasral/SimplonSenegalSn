@@ -31,38 +31,38 @@ header {
 }
 
 .navbar{
-    padding-bottom: 0.125rem;
+    padding-bottom: 0;
 }
 
 .navbar-nav {
     align-items: center;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 36rem) {
     .navbar-nav {
         justify-content: space-evenly;
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
     .navbar-nav {
         justify-content: space-evenly;
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 62rem) {
     .navbar-nav {
         justify-content: space-evenly;
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 75rem) {
     .navbar-nav {
         justify-content: space-evenly;
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 87.5rem) {
     .navbar-nav {
         justify-content: space-evenly;
     }
@@ -76,7 +76,7 @@ header {
 }
 
 .nav-link.active {
-    color: #000;
+    color: #CE0033;
     border-bottom: 0.1875rem solid #CE0033;
 }
 
@@ -90,6 +90,7 @@ header {
     bottom: 0.250rem;
     height: 2rem;
     border: none;
+    font-weight: 800;
     background-color: #CE0033;
     color: #fff;
     border-radius: 1.5625rem;
@@ -124,9 +125,11 @@ header {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.banniere>h2 {
+.banniere>h1 {
     color: #fff;
-    font-size: 3.125rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 4.5rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -134,22 +137,23 @@ header {
 }
 
 [name="sms"] {
-    max-width: 15rem;
-    max-height: 3.5rem;
+    /* min-width: 15.8125rem; */
+    padding: 0 0.625rem;
+    min-width: 25.25rem;
+    min-height: 3.5rem;
     box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.25);
     border-radius: 0.4375rem 0 0 0.4375rem;
     border: none;
 }
 
 .searchBoxSection {
-    margin: 4.9375rem auto;
-    justify-content: center;
+    margin: 6.4375rem auto 3.8125rem;
 }
 
 .searchBoxSection span {
     position: relative;
-    width: 4.1875rem;
-    height: 3.5rem;
+    min-width: 4.1875rem;
+    min-height: 3.5rem;
     background: #CE0033;
     box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.25);
     border-radius: 0 0.4375rem 0.4375rem 0;
@@ -164,7 +168,6 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 
 /*End Banner */
 
@@ -187,21 +190,22 @@ header {
 
 .subTitle h2 {
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
     color: #CE0033;
-    letter-spacing: 4%;
-    /* font-size: 3rem; */
 }
 
 .subTitle span {
     display: block;
-    width: 5rem;
-    height: 0.1875rem;
+    max-width: 8.5625rem;
+    max-height: 0.1875rem;
     border-top: 0.1875rem solid #000;
 }
 
 .subTitle span+p {
     line-height: 2.04625rem;
     text-align: justify;
+    font-size: 1.5rem;
     padding: 2rem 0 2.875rem 0;
 }
 
@@ -276,6 +280,79 @@ header {
     right: 0;
 }
 
+.public-nav-bar,
+.parcours-nav-bar {
+    min-height: 31.25rem;
+    border-left: 0.625rem solid #CE0033;
+    position: relative;
+    left: 1.125rem;
+}
+
+.parcours-nav-bar-subdivision {
+    min-height: 15.625rem;
+}
+
+.public-nav-bar-subdivision {
+    min-height: 18.75rem;
+}
+
+.rectangle {
+    max-width: 11rem;
+    max-height: 3.125rem;
+    background-color: #CE0033;
+    position: relative;
+    right: 0.6rem;
+    padding: 0.625rem 0;
+    border-radius: 0 1.875rem 1.875rem 0;
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+.rectangle img {
+    max-width: 23%;
+    padding: 0.3125rem;
+    position: relative;
+    right: 0.9375rem;
+    border: 0.03125rem solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+[alt="mini-logo-discover"] {
+    background-color: #fff;
+    border: 0.0625rem solid #CE0033;
+}
+
+[alt="mini-logo-initiation"] {
+    background-color: #CE0033;
+}
+
+[alt="mini-logo-metier"] {
+    background-color: #CE0033;
+}
+
+[alt="mini-logo-femme"] {
+    background-color: #fff;
+    border: 0.0625rem solid #CE0033;
+}
+
+[alt="mini-logo-baby-boy"],
+[alt="mini-logo-disabled"],
+[alt="mini-logo-refugee"] {
+    background-color: #CE0033;
+}
+
+.rectangle h6 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+
+@media (max-width:61.9375rem){
+    .wrapper{
+        padding: 0;
+    }
+}
 
 /*End Parcours*/
 
@@ -345,42 +422,66 @@ footer ul {
     list-style-type: none;
 }
 
-.socialMedia img {
-    width: 1.875rem;
-    height: 1.875rem;
-    margin: 2.5rem 0 0 0;
+.socialMedia{
+    max-width: 12.628125rem;
 }
 
-.socialMedia {
-    max-width: 12.625rem;
+.socialMedia img {
+    max-width: 1.875rem;
+    max-height: 1.875rem;
+    margin: 2.5rem 0 0 0;
 }
 
 footer {
     background: url(../images/footer-background.png) center;
     padding: 3.375rem 2.75rem;
-    /* min-height: 29.5rem; */
 }
 
-.see-more,
+.see-more-list,
 .location,
 .news {
     color: #fff;
     height: 100%;
 }
 
-.news li:nth-child(2) p {
+.location{
+    height: 16.875rem;
+}
+
+.location-title{
+    height: 10%;
+}
+
+.first-mini-location{
+    height: 30%;
+}
+
+.second-mini-location{
+    height: 40%;
+}
+
+.second-mini-location li:first-child h6{
+    font-weight: bold;
+}
+
+.news li h5, .location li h5, .see-more-list li h5{
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+.news-para p {
     max-width: 15.625rem;
 }
 
 [name="bottom-form"] {
     display: inline-block;
-    max-width: 8.375rem;
+    max-width: 12.7rem;
     padding: 0.625rem;
     box-shadow: 0.25rem 0.25rem 1.625rem 0.0625rem rgba(94, 109, 108, 0.34);
     border-radius: 0.625rem 0 0 0.625rem;
 }
 
-.news li input+span {
+.news-form span {
     display: inline-block;
     position: relative;
     left: -0.1875rem;
@@ -392,7 +493,6 @@ footer {
     cursor: pointer;
     font-weight: bold;
     box-shadow: 0.25rem 0.25rem 1.625rem 0.0625rem rgba(94, 109, 108, 0.34);
-    /* border-radius: 0.625rem 0 0 0.625rem; */
     border-radius: 0 0.625rem 0.625rem 0;
     text-align: center;
 }
@@ -401,7 +501,7 @@ footer {
     /* width: 100%; */
     background-color: #CE0033;
     color: #fff;
-    padding: 1.5625rem 2.75rem;
+    padding: 1rem 2.75rem;
 }
 
 .trademark p {
@@ -419,16 +519,61 @@ footer {
     font-size: 1.25rem;
 }
 
+/* Banner media query */
+@media (max-width: 35.9375rem) and (max-width: 47.9374rem){
+    .banniere > h1 {
+    font-size: 2.5rem;
+}
 
-/* @media (max-width: 992px) {
-    .see-more,
-    .location,
-    .credentials,
-    .news {
-        flex-direction: column;
-        justify-content: center;
+@media (max-width: 35.99875rem){
+    [name="sms"] {
+        min-width: 15rem;
     }
-} */
+}
+/* Banner media query */
 
+/* Par parcours media query */
+@media (max-width: 35.99875rem){
+    .subTitle h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.875rem;
+    color: #CE0033;
+}
+
+.subTitle span {
+    display: block;
+    max-width: 5rem;
+    max-height: 0.1875rem;
+    border-top: 0.1875rem solid #000;
+}
+}
+/* Par parcours media query */
+
+/* Footer media query */
+@media (max-width: 87.4375rem) {
+    [name="bottom-form"] {
+        max-width: 11rem;
+    }
+}
+
+@media (max-width: 74.9375rem) {
+    [name="bottom-form"] {
+        max-width: 8rem;
+    }
+}
+
+@media (max-width: 61.9375rem) {
+    [name="bottom-form"] {
+        max-width: 14rem;
+    }
+}
+
+@media (max-width: 35.9375rem) and (max-width: 47.9374rem){
+    [name="bottom-form"] {
+    max-width: 9rem;
+}
+
+/* Footer media query */
 
 /*End Footer*/
