@@ -223,7 +223,7 @@ header {
 }
 
 .my-cards {
-    max-height: 14.375rem;
+    height: 11.3125rem;
 }
 
 .card-title {
@@ -241,6 +241,19 @@ header {
 
 .partenariatCards .card-text {
     padding: 2rem 0 2.875rem 0;
+    font-size: 1.25rem;
+    max-width: 16.0625rem;
+    margin: 0 auto;
+}
+
+.formationCards .card-text{
+    font-size: 1.25rem;
+    max-width: 17.125rem;
+    margin: 0 auto;
+}
+
+.card-body.formation-margin button{
+    margin: 0.9375rem auto;
 }
 
 .card-body button {
@@ -252,7 +265,7 @@ header {
     height: 2.754375rem;
     border: 0.0625rem solid #CE0033;
     border-radius: 2.5rem;
-    margin: 0 0 0.9375rem 0;
+    margin: 0 auto 0.9375rem;
 }
 
 .affichage {
@@ -397,7 +410,7 @@ header {
 }
 
 .height-resize {
-    width: 50%;
+    max-width: 50%;
     margin: 0 auto;
 }
 
@@ -548,7 +561,48 @@ footer {
     border-top: 0.1875rem solid #000;
 }
 }
+
+@media (max-width: 87.4375rem) {
+    .my-cards {
+        height: 10.6875rem;
+    }
+}
+
+@media (max-width: 74.9375rem) {
+    .my-cards {
+        height: 8.5625rem;
+    }
+}
+
+@media (max-width: 61.9375rem) {
+    .my-cards {
+        height: 8.125rem;
+    }
+}
+
+@media (max-width: 47.9374rem){
+    .my-cards{
+        height: 8.5625rem;
+    }
+}
+
 /* Par parcours media query */
+
+/* Par partenariat media query */
+@media (max-width: 35.99875rem){
+   .partenariatCards .card-text {
+    padding: 0 0 1.25rem 0;
+}
+}
+
+@media (max-width: 22.3125rem){
+   .partenariat-btn {
+    position: relative;
+    right: 0.125rem;
+}
+}
+
+/* Par partenariat media quetry */
 
 /* Footer media query */
 @media (max-width: 87.4375rem) {
@@ -572,6 +626,7 @@ footer {
 @media (max-width: 35.9375rem) and (max-width: 47.9374rem){
     [name="bottom-form"] {
     max-width: 9rem;
+}
 }
 
 /* Footer media query */
