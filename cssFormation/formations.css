@@ -35,49 +35,73 @@
 
 
 /*Footer*/
-
 footer ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
 
+.socialMedia{
+    max-width: 12.628125rem;
+}
+
 .socialMedia img {
-    width: 1.875rem;
-    height: 1.875rem;
+    max-width: 1.875rem;
+    max-height: 1.875rem;
     margin: 2.5rem 0 0 0;
 }
 
-.socialMedia {
-    max-width: 12.625rem;
-}
-
 footer {
-    background: url(../images/footer-background.png) center;
+    background-image: url(../images/footer-background.png);
+    background-position: center;
     padding: 3.375rem 2.75rem;
-    /* min-height: 29.5rem; */
 }
 
-.see-more,
+.see-more-list,
 .location,
 .news {
     color: #fff;
     height: 100%;
 }
 
-.news li:nth-child(2) p {
+.location{
+    height: 16.875rem;
+}
+
+.location-title{
+    height: 10%;
+}
+
+.first-mini-location{
+    height: 30%;
+}
+
+.second-mini-location{
+    height: 40%;
+}
+
+.second-mini-location li:first-child h6{
+    font-weight: bold;
+}
+
+.news li h5, .location li h5, .see-more-list li h5{
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+.news-para p {
     max-width: 15.625rem;
 }
 
 [name="bottom-form"] {
     display: inline-block;
-    max-width: 9.375rem;
+    max-width: 12.7rem;
     padding: 0.625rem;
     box-shadow: 0.25rem 0.25rem 1.625rem 0.0625rem rgba(94, 109, 108, 0.34);
     border-radius: 0.625rem 0 0 0.625rem;
 }
 
-.news li input+span {
+.news-form span {
     display: inline-block;
     position: relative;
     left: -0.1875rem;
@@ -89,7 +113,6 @@ footer {
     cursor: pointer;
     font-weight: bold;
     box-shadow: 0.25rem 0.25rem 1.625rem 0.0625rem rgba(94, 109, 108, 0.34);
-    /* border-radius: 0.625rem 0 0 0.625rem; */
     border-radius: 0 0.625rem 0.625rem 0;
     text-align: center;
 }
@@ -98,7 +121,7 @@ footer {
     /* width: 100%; */
     background-color: #CE0033;
     color: #fff;
-    padding: 1.5625rem 2.75rem;
+    padding: 1rem 2.75rem;
 }
 
 .trademark p {
@@ -116,16 +139,142 @@ footer {
     font-size: 1.25rem;
 }
 
+/* Banner media query */
+@media (max-width: 35.9375rem) and (max-width: 47.9374rem){
+    .banniere > h1 {
+    font-size: 2.5rem;
+}
+}
 
-/* @media (max-width: 992px) {
-    .see-more,
-    .location,
-    .credentials,
-    .news {
-        flex-direction: column;
-        justify-content: center;
+@media (max-width: 35.99875rem){
+    [name="sms"] {
+        min-width: 15rem;
     }
-} */
+}
+/* Banner media query */
 
+/* Par parcours media query */
+@media (max-width: 35.99875rem){
+    .subtitle h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.875rem;
+    color: #CE0033;
+}
 
+.subtitle span {
+    display: block;
+    max-width: 5rem;
+    max-height: 0.1875rem;
+    border-top: 0.1875rem solid #000;
+}
+}
+
+@media (min-width: 87.4375rem) {
+    .mobile-hide{
+        display: none;
+    }
+}
+
+@media (max-width: 87.4375rem) {
+    .my-cards {
+        height: 10.6875rem;
+    }
+
+    .mobile-hide{
+        display: none;
+    }
+}
+
+@media (max-width: 74.9375rem) {
+    .my-cards {
+        height: 8.5625rem;
+    }
+
+    .mobile-hide{
+        display: none;
+    }
+}
+
+@media (max-width: 61.9375rem) {
+    .my-cards {
+        height: 8.125rem;
+    }
+
+    .mobile-hide{
+        display: none;
+    }
+}
+
+@media (max-width: 47.9374rem){
+    .my-cards{
+        height: 8.5625rem;
+    }
+}
+
+@media (max-width: 47.9374rem){
+    .parcours-hide{
+        display: none;
+    }
+
+     .public-hide{
+        display: none;
+    }
+
+    .mobile-hide{
+        display: block;
+        margin: 0 0 1.5625rem 0;
+    }
+}
+
+/* Par parcours media query */
+
+/* Par partenariat media query */
+@media (max-width: 35.99875rem){
+   .partenariatCards .card-text {
+    padding: 0 0 1.25rem 0;
+}
+}
+
+@media (max-width: 22.3125rem){
+   .partenariat-btn {
+    position: relative;
+    right: 0.125rem;
+}
+}
+
+/* Par partenariat media quetry */
+
+/* Footer media query */
+@media (max-width: 87.4375rem) {
+    [name="bottom-form"] {
+        max-width: 11rem;
+    }
+}
+
+@media (max-width: 74.9375rem) {
+    [name="bottom-form"] {
+        max-width: 8rem;
+    }
+}
+
+@media (max-width: 61.9375rem) {
+    [name="bottom-form"] {
+        max-width: 14rem;
+    }
+}
+
+@media (max-width: 47.9374rem){
+    [name="bottom-form"] {
+    max-width: 10rem;
+}
+}
+
+@media (max-width: 35.9375rem){
+    [name="bottom-form"] {
+    max-width: 8rem;
+}
+}
+
+/* Footer media query */
 /*End Footer*/

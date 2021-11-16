@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="cssFormation/formations.css">
     <title>Formations</title>
 </head>
@@ -30,113 +31,122 @@
     <!-- Fin de la section par partenariat -->
 
     <!-- Debut du footer -->
-    <div class="container">
-        <footer>
-            <!-- <div class="d-flex justify-content-between"> -->
-            <div class="row">
+<div class="container">
+    <footer>
+        <div class="row">
+            <section class="col-lg-3 col-md-6 col-sm-12">
+                <h3>Logo et reseaux sociaux</h3>
+                <ul class="credentials d-flex flex-column flex-wrap">
+                    <li>
+                        <img src="images/logoWhite.svg" alt="Simplon White Logo">
+                    </li>
+                    <li class="socialMedia d-flex justify-content-between">
+                        <img src="images/twitter.png" alt="twitter">
+                        <img src="images/facebook.png" alt="facebook">
+                        <img src="images/instagram.png" alt="instagram">
+                        <img src="images/youtube.png" alt="youtube">
+                    </li>
+                </ul>
+            </section>
+            <section class="col-lg-3 col-md-6 col-sm-12 see-more d-flex">
+                <h3>En savoir plus</h3>
+                <ul class="see-more-list d-flex flex-column flex-wrap">
+                    <li>
+                        <h5>Voir plus</h5>
+                    </li>
+                    <li>
+                        <h6>A propos</h6>
+                    </li>
+                    <li>
+                        <h6>Notre histoire</h6>
+                    </li>
+                    <li>
+                        <h6>Condition d'utilisation</h6>
+                    </li>
+                    <li>
+                        <h6>Politique de confidentialite</h6>
+                    </li>
+                    <li>
+                        <h6>FAQ</h6>
+                    </li>
+                </ul>
+            </section>
+            <section class="col-lg-3 col-md-6 col-sm-12 d-flex flex-column justify-content-between location">
+                <h3>Coordonnees</h3>
+                <ul class="location-title">
+                    <li>
+                        <h5>Coordonnees</h5>
+                    </li>
+                </ul>
+                <ul class="first-mini-location d-flex flex-column">
+                    <li>
+                        <h6>Cite Keur Gorgui</h6>
+                    </li>
+                    <li>
+                        <h6>Dakar, Sicap, Liberte 2</h6>
+                    </li>
+                    <li>
+                        <h6>Senegal</h6>
+                    </li>
+                </ul>
 
-                <div class="col-lg-3 col-md-6 col-sm-3">
-                    <ul class="credentials d-flex flex-column flex-wrap">
-                        <li>
-                            <img src="images/logoWhite.svg" alt="Simplon White Logo">
-                        </li>
-                        <li class="socialMedia d-flex justify-content-between">
-                            <img src="images/twitter.png" alt="twitter">
-                            <img src="images/facebook.png" alt="facebook">
-                            <img src="images/instagram.png" alt="instagram">
-                            <img src="images/youtube.png" alt="youtube">
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-md-6 col-sm-12">
-                    <ul class="see-more d-flex flex-column justify-content-between flex-wrap">
-                        <li>
-                            <h5>Voir plus</h5>
-                        </li>
-                        <li>
-                            <h6>A propos</h6>
-                        </li>
-                        <li>
-                            <h6>Notre histoire</h6>
-                        </li>
-                        <li>
-                            <h6>Condition d'utilisation</h6>
-                        </li>
-                        <li>
-                            <h6>Politique de confidentialite</h6>
-                        </li>
-                        <li>
-                            <h6>FAQ</h6>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <ul class="location d-flex flex-column justify-content-between flex-wrap">
-                        <li>
-                            <h5>Coordonnees</h5>
-                        </li>
-                        <li>
-                            <h6>Cite Keur Gorgui</h6>
-                        </li>
-                        <li>
-                            <h6>Dakar, Sicap, Liberte 2</h6>
-                        </li>
-                        <li>
-                            <h6>Senegal</h6>
-                        </li>
-                        <li>
-                            <p>
-                                simplon@email.com
-                            </p>
-                            <p>
-                                help@simplon.com
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                (221) 77 456 78 90
-                            </p>
-                            <p>
-                                (221) 77 654 32 10
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <ul class="news d-flex flex-column justify-content-between flex-wrap">
-                        <li>
-                            <h5>Notre Newsletter</h5>
-                        </li>
-                        <li>
-                            <p>
-                                Souscrivez-vous à notre newsletter pour ne manquer aucune de nos activités
-                            </p>
-                        </li>
-                        <li>
-                            <input type="text" name="bottom-form" id="bottom-form" placeholder="Email">
-                            <span>Joindre</span>
-                            <!-- <p>
-                                Joindre
-                            </p> -->
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- </div> -->
-        </footer>
-        <div class="d-flex mini-footer flex-wrap justify-content-between">
-            <div class="trademark">
-                <p>
-                    &copy; 2021 Simplon. All rights reserved.
-                </p>
-            </div>
-            <div class="dev">
-                <p>
-                    Made with <span>&hearts;</span> by <span>SimplonP4</span>
-                </p>
-            </div>
+                <ul class="second-mini-location d-flex flex-column justify-content-end">
+                    <li>
+                        <h6>
+                            simplon@email.com
+                        </h6>
+                        <h6>
+                            help@simplon.com
+                        </h6>
+                    </li>
+                    <li>
+                        <h6>
+                            (221) 77 456 78 90
+                        </h6>
+                        <h6>
+                            (221) 77 654 32 10
+                        </h6>
+                    </li>
+                </ul>
+            </section>
+            <section class="col-lg-3 col-md-6 col-sm-12 news d-flex flex-column justify-content-between flex-wrap">
+                <h3>Newsletter</h3>
+                <ul class="news-title">
+                    <li>
+                        <h5>Notre Newsletter</h5>
+                    </li>
+                </ul>
+                <ul class="news-para">
+                    <li>
+                        <p>
+                            Souscrivez-vous à notre newsletter pour ne manquer aucune de nos activités
+                        </p>
+                    </li>
+                </ul>
+                <ul class="news-form">
+                    <li>
+                        <input type="text" name="bottom-form" id="bottom-form" placeholder="Email">
+                        <span>Joindre</span>
+                    </li>
+                </ul>
+            </section>
         </div>
+    </footer>
+    <div class="d-flex mini-footer flex-wrap justify-content-between">
+        <section class="trademark">
+            <h3>Copyright</h3>
+            <p>
+                &copy; 2021 Simplon. All rights reserved.
+            </p>
+        </section>
+        <section class="dev">
+            <h3>Developpeur remerciement</h3>
+            <p>
+                Made with <span>&hearts;</span> by <span>SimplonP4</span>
+            </p>
+        </section>
     </div>
+</div>
     <!-- Fin du footer -->
 
     <script src="bootstrap/js/bootstrap.min.js"></script>
