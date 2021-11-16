@@ -457,7 +457,8 @@ footer ul {
 }
 
 footer {
-    background: url(../images/footer-background.png) center;
+    background-image: url(../images/footer-background.png);
+    background-position: center;
     padding: 3.375rem 2.75rem;
 }
 
@@ -548,6 +549,7 @@ footer {
     .banniere > h1 {
     font-size: 2.5rem;
 }
+}
 
 @media (max-width: 35.99875rem){
     [name="sms"] {
@@ -636,10 +638,9 @@ footer {
 
 @media (max-width: 35.9375rem) and (max-width: 47.9374rem){
     [name="bottom-form"] {
-    max-width: 9rem;
+    max-width: 14rem;
 }
 }
 
 /* Footer media query */
-
-/*End Footer*/
+/* End Footer  */
