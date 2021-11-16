@@ -184,25 +184,25 @@ header {
     padding: 0 4.6875rem;
 }
 
-.subTitle {
+.subtitle {
     padding: 1.25rem 0 0 0;
 }
 
-.subTitle h2 {
+.subtitle h2 {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 3rem;
     color: #CE0033;
 }
 
-.subTitle span {
+.subtitle span {
     display: block;
     max-width: 8.5625rem;
     max-height: 0.1875rem;
     border-top: 0.1875rem solid #000;
 }
 
-.subTitle span+p {
+.subtitle span+p {
     line-height: 2.04625rem;
     text-align: justify;
     font-size: 1.5rem;
