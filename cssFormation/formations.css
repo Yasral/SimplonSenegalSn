@@ -393,6 +393,12 @@ header {
 .mobile-nav button:hover{
     transform: rotate(-2deg) translateY(-0.3125rem) scale(1.025);
 }
+
+section h3, article h3{
+    height: 0;
+    text-indent: -10000px;
+    display: none;
+}
 /* Mobile navigation */
 
 @media (max-width:61.9375rem){
@@ -693,6 +699,12 @@ footer {
 }
 
 @media (max-width: 35.9375rem) and (max-width: 47.9374rem){
+    [name="bottom-form"] {
+    max-width: 8rem;
+}
+}
+
+@media (max-width: 47.9374rem){
     [name="bottom-form"] {
     max-width: 14rem;
 }
