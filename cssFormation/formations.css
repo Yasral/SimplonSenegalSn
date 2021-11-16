@@ -698,15 +698,15 @@ footer {
     }
 }
 
-@media (max-width: 35.9375rem) and (max-width: 47.9374rem){
+@media (max-width: 47.9374rem){
     [name="bottom-form"] {
-    max-width: 8rem;
+    max-width: 10rem;
 }
 }
 
-@media (max-width: 47.9374rem){
+@media (max-width: 35.9375rem){
     [name="bottom-form"] {
-    max-width: 14rem;
+    max-width: 8rem;
 }
 }
 
