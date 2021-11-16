@@ -396,7 +396,7 @@ header {
 
 section h3, article h3{
     height: 0;
-    text-indent: -10000px;
+    text-indent: -625rem;
     display: none;
 }
 /* Mobile navigation */
