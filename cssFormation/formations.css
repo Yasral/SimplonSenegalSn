@@ -18,33 +18,39 @@
 
 /*Parcours*/
 
-.subTitle {
+.wrapper{
+    padding: 0 4.6875rem;
+}
+
+.subtitle {
     padding: 1.25rem 0 0 0;
 }
 
-.subTitle h2 {
+.subtitle h2 {
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
     color: #CE0033;
-    letter-spacing: 4%;
-    /* font-size: 3rem; */
 }
 
-.subTitle span {
+.subtitle span {
     display: block;
-    width: 5rem;
-    height: 0.1875rem;
+    max-width: 8.5625rem;
+    max-height: 0.1875rem;
     border-top: 0.1875rem solid #000;
 }
 
-.subTitle span+p {
+.subtitle span+p {
     line-height: 2.04625rem;
     text-align: justify;
+    font-size: 1.5rem;
     padding: 2rem 0 2.875rem 0;
 }
 
 .formationCards {
     /* max-width: 21.5rem; */
-    min-width: 14.625rem;
+    min-width: 14.5rem;
+    border-radius: 0.625rem 0.625rem 0 0;
 }
 
 .card {
@@ -56,7 +62,7 @@
 }
 
 .my-cards {
-    max-height: 14.375rem;
+    height: 11.3125rem;
 }
 
 .card-title {
@@ -74,6 +80,24 @@
 
 .partenariatCards .card-text {
     padding: 2rem 0 2.875rem 0;
+    font-size: 1.25rem;
+    max-width: 16.0625rem;
+    margin: 0 auto;
+}
+
+.formationCards .card-text{
+    font-size: 1.25rem;
+    max-width: 17.125rem;
+    margin: 0 auto;
+}
+
+.card-body.formation-margin button{
+    margin: 0.9375rem auto;
+}
+
+.card-img,
+.card-img-top {
+    border-radius: 0.625rem 0.625rem 0 0;
 }
 
 .card-body button {
@@ -85,7 +109,7 @@
     height: 2.754375rem;
     border: 0.0625rem solid #CE0033;
     border-radius: 2.5rem;
-    margin: 0 0 0.9375rem 0;
+    margin: 0 auto 0.9375rem;
 }
 
 .affichage {
@@ -113,6 +137,113 @@
     right: 0;
 }
 
+.public-nav-bar,
+.parcours-nav-bar {
+    min-height: 31.25rem;
+    border-left: 0.625rem solid #CE0033;
+    position: relative;
+    left: 1.125rem;
+}
+
+.parcours-nav-bar-subdivision {
+    min-height: 15.625rem;
+}
+
+.public-nav-bar-subdivision {
+    min-height: 18.75rem;
+}
+
+.rectangle {
+    max-width: 11rem;
+    max-height: 3.125rem;
+    background-color: #CE0033;
+    position: relative;
+    right: 0.6rem;
+    padding: 0.625rem 0;
+    border-radius: 0 1.875rem 1.875rem 0;
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.rectangle:hover{
+    transform: rotate(-2deg) translateY(-0.3125rem) scale(1.025);
+}
+
+.rectangle img {
+    max-width: 23%;
+    padding: 0.3125rem;
+    position: relative;
+    right: 0.9375rem;
+    border: 0.03125rem solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+[alt="mini-logo-discover"] {
+    background-color: #fff;
+    border: 0.0625rem solid #CE0033;
+}
+
+[alt="mini-logo-initiation"] {
+    background-color: #CE0033;
+}
+
+[alt="mini-logo-metier"] {
+    background-color: #CE0033;
+}
+
+[alt="mini-logo-femme"] {
+    background-color: #fff;
+    border: 0.0625rem solid #CE0033;
+}
+
+[alt="mini-logo-baby-boy"],
+[alt="mini-logo-disabled"],
+[alt="mini-logo-refugee"] {
+    background-color: #CE0033;
+}
+
+.rectangle h6 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+
+/* Mobile navigation */
+
+.mobile-nav button{
+  border: none;
+  padding: 0.625rem 0.3125rem;
+  min-width: 8.125rem;
+  background-color: #CE0033;
+  color: #fff;
+  border: 0.125rem solid #fff;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.mobile-nav button.categorie{
+  min-width: 11.25rem;
+}
+
+.mobile-nav button:hover{
+    transform: rotate(-2deg) translateY(-0.3125rem) scale(1.025);
+}
+
+section h3, article h3{
+    height: 0;
+    text-indent: -625rem;
+    display: none;
+}
+/* Mobile navigation */
+
+@media (max-width:61.9375rem){
+    .wrapper{
+        padding: 0;
+    }
+}
 
 /*End Parcours*/
 
@@ -157,7 +288,7 @@
 }
 
 .height-resize {
-    width: 50%;
+    max-width: 50%;
     margin: 0 auto;
 }
 
