@@ -560,14 +560,14 @@ footer {
 
 /* Par parcours media query */
 @media (max-width: 35.99875rem){
-    .subTitle h2 {
+    .subtitle h2 {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.875rem;
     color: #CE0033;
 }
 
-.subTitle span {
+.subtitle span {
     display: block;
     max-width: 5rem;
     max-height: 0.1875rem;
@@ -599,6 +599,17 @@ footer {
     }
 }
 
+@media (max-width: 47.9374rem){
+    .parcours-hide{
+        display: none;
+    }
+}
+
+@media (max-width: 47.9374rem){
+    .public-hide{
+        display: none;
+    }
+}
 /* Par parcours media query */
 
 /* Par partenariat media query */
