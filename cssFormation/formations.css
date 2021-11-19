@@ -213,10 +213,15 @@ header {
     padding: 2rem 0 2.875rem 0;
 }
 
-.formationCards {
+.formation-cards {
     /* max-width: 21.5rem; */
-    min-width: 14.5rem;
+    max-width: 95%;
     border-radius: 0.625rem 0.625rem 0 0;
+}
+
+.partenariat-cards-size{
+     max-width: 95%;
+    border-radius: 0.625rem 0.625rem 0 0;   
 }
 
 .card {
@@ -244,14 +249,14 @@ header {
     text-align: center;
 }
 
-.partenariatCards .card-text {
+.partenariat-cards .card-text {
     padding: 2rem 0 2.875rem 0;
     font-size: 1.25rem;
     max-width: 16.0625rem;
     margin: 0 auto;
 }
 
-.formationCards .card-text{
+.formation-cards .card-text{
     font-size: 1.25rem;
     max-width: 17.125rem;
     margin: 0 auto;
@@ -479,6 +484,10 @@ footer ul {
     list-style-type: none;
 }
 
+footer a{
+    color: #fff;
+}
+
 .socialMedia{
     max-width: 12.628125rem;
 }
@@ -608,21 +617,14 @@ footer {
 }
 }
 
-@media (min-width: 87.4375rem) {
-    .mobile-hide{
-        display: none;
-    }
+.hide{
+    display: none;
 }
 
-@media (max-width: 87.4375rem) {
-    .my-cards {
-        height: 10.6875rem;
-    }
-
-    .mobile-hide{
-        display: none;
-    }
+.mobile-hide{
+    display: none;
 }
+
 
 @media (max-width: 74.9375rem) {
     .my-cards {
@@ -669,7 +671,7 @@ footer {
 
 /* Par partenariat media query */
 @media (max-width: 35.99875rem){
-   .partenariatCards .card-text {
+   .partenariat-cards .card-text {
     padding: 0 0 1.25rem 0;
 }
 }
