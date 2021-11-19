@@ -28,6 +28,12 @@ body {
 header {
     padding: 1.1875rem 0 0 0;
     box-shadow: 0 0.0625rem 0.8125rem rgba(0, 0, 0, 0.13);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #fff;
 }
 
 .logo {
@@ -215,8 +221,9 @@ header {
 
 .formation-cards {
     /* max-width: 21.5rem; */
-    max-width: 95%;
+    max-width: 90%;
     border-radius: 0.625rem 0.625rem 0 0;
+    margin: 0 auto;
 }
 
 .partenariat-cards-size{
@@ -665,6 +672,10 @@ footer {
         display: block;
         margin: 0 0 1.5625rem 0;
     }
+
+   .formation-cards{
+        max-width: 85%;
+   }
 }
 
 /* Par parcours media query */
