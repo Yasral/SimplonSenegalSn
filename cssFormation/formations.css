@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 a {
@@ -419,6 +421,39 @@ section h3, article h3{
     text-indent: -625rem;
     display: none;
 }
+
+.parcours-section, .public-section{
+    position: relative;
+}
+
+.nav-bar-mobile .menu{
+    position: absolute;
+    left: 0;
+    line-height: 2.8125rem;
+    z-index: 50;
+}
+
+.nav-bar-mobile .menu li{
+    margin-bottom: 0.625rem;
+}
+
+.nav-bar-mobile button{
+    min-width: 9.375rem;
+    background-color: #CE0033;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0 1.875rem 1.875rem 0;
+    border: none;
+}
+
+.nav-bar-mobile button:hover{
+    transform: rotate(-2deg) translateY(-0.3125rem) scale(1.025);
+}
+
+.nav-bar-mobile li img{
+    max-width: 20%;
+    border-radius: 50%;
+}
 /* Mobile navigation */
 
 @media (max-width:61.9375rem){
@@ -694,7 +729,7 @@ footer {
 @media (max-width: 22.3125rem){
    .partenariat-btn {
     position: relative;
-    right: 0.125rem;
+    right: 0.625rem;
 }
 }
 
