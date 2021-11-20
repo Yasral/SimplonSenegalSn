@@ -57,16 +57,45 @@ miniLgVersionThree.addEventListener("change", versionThree);
 
 var blockParcoursTaille;
 var blockPublicTaille;
+var blockPartenariatTaille;
+var blockParcoursBtn;
+var blockPublicBtn;
+
 var parcours = document.querySelector(".parcours-section");
 var public = document.querySelector(".public-section");
+var partenariat = document.querySelector(".partenariat-section");
+var parcoursBtn = document.querySelector(".parcours-see-more-button");
+var publicBtn = document.querySelector(".public-see-more-button");
 
 blockParcoursTaille = parcours.getBoundingClientRect();
 blockPublicTaille = public.getBoundingClientRect();
+blockPartenariatTaille = partenariat.getBoundingClientRect();
+blockParcoursBtn = parcoursBtn.getBoundingClientRect();
+blockPublicBtn = publicBtn.getBoundingClientRect();
+
 console.log(blockParcoursTaille);
 console.log(blockPublicTaille);
+console.log(blockPartenariatTaille);
+console.log(blockParcoursBtn);
+
+function removeBackgroundClasslist(section){
+    section.classList.remove("section-color-change");
+}
+
+function addBackgroundClasslist(section){
+    section.classList.add("section-color-change");
+}
+
 window.addEventListener("scroll", function(e){
    console.log(window.scrollY);
-   if(window.scrollY >= Math.ceil(blockParcoursTaille.top) && window.scrollY < Math.ceil(blockPublicTaille.top)){
-       console.log("nous sommes sur la partie parcours");
+
+   if(window.scrollY >= Math.ceil(blockParcoursTaille.top) && window.scrollY < Math.ceil(blockParcoursBtn.top)){
+       addBackgroundClasslist(parcours);
+       removeBackgroundClasslist(public);
+   }else if(window.scrollY >= Math.ceil(blockPublicTaille.top) && window.scrollY < Math.ceil(blockPublicBtn.top)){
+       removeBackgroundClasslist(parcours);
+       addBackgroundClasslist(public);
+   }else{
+       removeBackgroundClasslist(public);
    }
 });

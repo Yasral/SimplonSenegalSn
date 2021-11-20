@@ -25,6 +25,10 @@ body {
     max-width: 9.375rem;
 }
 
+.section-color-change{
+    background-color: pink;
+}
+
 header {
     padding: 1.1875rem 0 0 0;
     box-shadow: 0 0.0625rem 0.8125rem rgba(0, 0, 0, 0.13);
